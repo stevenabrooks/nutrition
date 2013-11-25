@@ -21,6 +21,29 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'debugger'
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails', "~> 2.10.1"
+  gem 'factory_girl_rails', "~> 3.2.0"
+  gem 'guard-rspec', "~> 0.7.0"
+end
+
+group :test do 
+  gem 'faker', "~> 1.0.1"
+  gem 'capybara', "~> 1.1.2"
+  gem 'database_cleaner', "~> 0.7.2"
+  gem 'launchy', "~> 2.1.0"
+end
+
+gem 'devise'
+gem 'letsrate'
+gem 'omniauth-twitter'
+gem 'acts-as-taggable-on'
+gem 'bullet', group: :development
+gem 'better_errors', group: :development
+gem 'binding_of_caller', group: :development
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

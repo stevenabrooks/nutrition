@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @nutritionist.name %>
+</p>
+
+<p>
+  <b>Practice:</b>
+  <%= @nutritionist.practice %>
+</p>
+
+<p>
+  <b>Statement:</b>
+  <%= @nutritionist.statement %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @nutritionist.title %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @nutritionist.website %>
+</p>
+
+<p>
+  <b>Expertise:</b>
+  <%= @nutritionist.expertise %>
+</p>
+
+<p>
+  <b>Education:</b>
+  <%= @nutritionist.education %>
+</p>
+
+<p>
+  <b>Awards:</b>
+  <%= @nutritionist.awards %>
+</p>
+
+
+<%= link_to 'Edit', edit_nutritionist_path(@nutritionist) %> |
+<%= link_to 'Back', nutritionists_path %>

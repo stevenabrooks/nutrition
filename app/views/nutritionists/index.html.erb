@@ -1,0 +1,37 @@
+<h1>Listing nutritionists</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Practice</th>
+    <th>Statement</th>
+    <th>Title</th>
+    <th>Website</th>
+    <th>Expertise</th>
+    <th>Education</th>
+    <th>Awards</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nutritionists.each do |nutritionist| %>
+  <tr>
+    <td><%= nutritionist.name %></td>
+    <td><%= nutritionist.practice %></td>
+    <td><%= nutritionist.statement %></td>
+    <td><%= nutritionist.title %></td>
+    <td><%= nutritionist.website %></td>
+    <td><%= nutritionist.expertise %></td>
+    <td><%= nutritionist.education %></td>
+    <td><%= nutritionist.awards %></td>
+    <td><%= link_to 'Show', nutritionist %></td>
+    <td><%= link_to 'Edit', edit_nutritionist_path(nutritionist) %></td>
+    <td><%= link_to 'Destroy', nutritionist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nutritionist', new_nutritionist_path %>

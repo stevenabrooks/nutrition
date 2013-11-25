@@ -1,0 +1,49 @@
+<%= form_for(@nutritionist) do |f| %>
+  <% if @nutritionist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nutritionist.errors.count, "error") %> prohibited this nutritionist from being saved:</h2>
+
+      <ul>
+      <% @nutritionist.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :practice, "Practice Name" %><br />
+    <%= f.text_field :practice %>
+  </div>
+  <div class="field">
+    <%= f.label :statement %><br />
+    <%= f.text_area :statement %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :expertise %><br />
+    <%= f.text_field :expertise %>
+  </div>
+  <div class="field">
+    <%= f.label :education %><br />
+    <%= f.text_field :education %>
+  </div>
+  <div class="field">
+    <%= f.label :awards %><br />
+    <%= f.text_field :awards %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
