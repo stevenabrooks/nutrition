@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Picture</th>
     <th>Practice</th>
     <th>Statement</th>
     <th>Title</th>
@@ -18,6 +19,7 @@
 <% @nutritionists.each do |nutritionist| %>
   <tr>
     <td><%= nutritionist.name %></td>
+    <td><%= image_tag nutritionist.image_url(:thumb).to_s %></td>
     <td><%= nutritionist.practice %></td>
     <td><%= nutritionist.statement %></td>
     <td><%= nutritionist.title %></td>

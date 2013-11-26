@@ -37,6 +37,8 @@ group :test do
   gem 'launchy', "~> 2.1.0"
 end
 
+gem 'carrierwave'
+gem 'rmagick'
 gem 'devise'
 gem 'letsrate'
 gem 'omniauth-twitter'
@@ -44,6 +46,7 @@ gem 'acts-as-taggable-on'
 gem 'bullet', group: :development
 gem 'better_errors', group: :development
 gem 'binding_of_caller', group: :development
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
