@@ -13,7 +13,7 @@ class NutritionistsController < ApplicationController
   # GET /nutritionists/1
   # GET /nutritionists/1.json
   def show
-    @nutritionist = Nutritionist.find(params[:id])
+    @nutritionist = Nutritionist.includes(:testimonials).find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

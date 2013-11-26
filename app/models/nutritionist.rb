@@ -4,5 +4,6 @@ class Nutritionist < ActiveRecord::Base
 
   has_many :certifications
   has_many :degrees, through: :certifications 
+  has_many :testimonials
 
 end

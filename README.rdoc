@@ -4,6 +4,6 @@ models should be:
 
 - nutritionist
 - rating
-- degrees
+- degrees 
 
 Should have tags for search

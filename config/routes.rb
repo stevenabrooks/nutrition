@@ -1,4 +1,7 @@
 Nutrition::Application.routes.draw do
+  resources :testimonials
+
+
   resources :n_degrees
 
 

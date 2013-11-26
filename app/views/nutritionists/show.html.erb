@@ -45,6 +45,13 @@
   <%= @nutritionist.awards %>
 </p>
 
+<h1>Testimonials:</h1>
+<p>
+  <% @nutritionist.testimonials.each do |testimonial| %>
+    <%= testimonial.text %>
+  <% end %>
+</p>
+
 
 <%= link_to 'Edit', edit_nutritionist_path(@nutritionist) %> |
 <%= link_to 'Back', nutritionists_path %>
