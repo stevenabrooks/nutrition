@@ -5,3 +5,5 @@ models should be:
 - nutritionist
 - rating
 - degrees
+
+Should have tags for search
