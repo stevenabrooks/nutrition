@@ -1,4 +1,10 @@
 Nutrition::Application.routes.draw do
+  resources :n_degrees
+
+
+  resources :degrees
+
+
   resources :nutritionists
 
 

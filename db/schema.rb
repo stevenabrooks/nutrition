@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131126004733) do
+ActiveRecord::Schema.define(:version => 20131126034604) do
+
+  create_table "certifications", :force => true do |t|
+    t.integer  "nutritionist_id"
+    t.integer  "degree_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  create_table "degrees", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "full_title"
+  end
 
   create_table "nutritionists", :force => true do |t|
     t.string   "name"
